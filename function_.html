@@ -1,0 +1,61 @@
+<script>
+    
+    
+function callMyName(name,callback){
+    var age = 20;
+    
+    callback(age);
+    
+    console.log('my name is '+name);
+}
+    function hello(age){
+        console.log("i am "+age+"years old");
+        
+    }
+    callMyName("parvez rohman",hello);
+    
+    /*same reason return another function */
+    
+   /* function welcomeMessage(name){
+        console.log("my name is " + name);
+        
+        return function abc(otp){
+            console.log("i am " +otp);
+        }
+    }
+    welcomeMessage("parvez Rohman")("Bangladeshi")*/
+    
+    //for primitive data type 
+    function valuechange(a){
+        
+        console.log("before change value "+a);
+        
+        var a =10;
+        
+        console.log("after change value " +a);
+        
+        
+    }
+    var a = 100;
+    console.log("original value " + a);
+    valuechange(a);
+    console.log("check value " + a);
+    
+    
+    
+    //for  non primitive data type
+
+    
+    function nonprimitivedataCheck(a){
+        console.log(a.one);
+        a.one = "two";
+        console.log(a.one);
+        
+    }
+    
+    var a = {
+        one : 'one'
+    }
+nonprimitivedataCheck(a)
+    console.log(a.one)
+</script>

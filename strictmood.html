@@ -1,0 +1,35 @@
+<script>
+    'use strict';
+var name = 'Zonayed Ahmed';
+var age = 10;
+  var  address = 'Khagrachori';
+console.log('my name is '+ name + ' i am '+age+' years Old' + 'i live in '+address);
+    function aFunc(){
+       var job = 'student';
+        console.log('A function with Strict Mood Enabaled');
+    }
+    aFunc();
+    console.log('i am a '+this.job+' and i am from '+address);
+    
+
+    var name = 'Afsana Rohman';
+    var age = 18;
+    address = 'Feni';
+    function aFunc(){
+        'use strict';
+       var  job = 'student';
+        console.log('A function with strict with Specific function ');
+    }
+    aFunc();
+    console.log('i live in '+this.job+' i live in '+address);
+    
+    var obj = {
+        name:'Afsana Rohman',
+        age:20
+    }
+    Object.preventExtensions(obj);
+    obj.address = 'feni';
+    console.log(obj.address);
+    
+
+</script>

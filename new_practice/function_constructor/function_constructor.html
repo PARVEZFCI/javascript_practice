@@ -1,0 +1,34 @@
+<script>
+
+    /*var person = function(name,age,job){
+        this.name = name;
+        this.age = age;
+        this.job = job;
+    }
+    var samir = new person("abdul",18,"Engineering");
+    console.log(samir.name);
+    
+    var info = function(name,age,job){
+        this.name = name;
+        this.age = age;
+        this.job = job;
+        
+        this.dateBD = function (){
+            console.log(this.name + 'Born In ' + (2021 - this.age));
+        }
+    }
+    var abc = new info("Parvez ",21,"student");
+    abc.dateBD();*/
+    
+    var person = function(name,age,job){
+        this.name = name;
+        this.age = age;
+        this.job = job;
+    }
+    person.prototype.dateofBD = function(){
+        console.log(this.name + ' is born in ' + (2021 - this.age) );
+    }
+    var parvez = new person('Parvez Rohman',21,'teacher');
+    
+   parvez.dateofBD();
+</script>

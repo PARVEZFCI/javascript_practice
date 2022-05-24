@@ -1,0 +1,32 @@
+<script>
+/*var Person = function (name,age,job){
+    this.name = name;
+    this.age = age;
+    this.job = job;
+    
+}
+var Teacher = function (name ,age,job,subject){
+    Person.call(this,name,age,job);
+    this.subject = subject;
+}
+
+var Afnan = new Teacher('Zobayada Afnan',18,'developer','CSE');
+    console.log(Afnan.subject);*/
+    
+var Person = function(name,age,job){
+    this.name = name;
+    this.age = age;
+    this.job=job;
+}
+var Teacher = function(name,age,job,subject){
+    Person.call(this,name,age,job);
+    this.subject = subject;
+}
+var Afnan = new Teacher('ZObayada Afnan',18,'DEveloper','CSE');
+    console.log(Afnan.subject);
+    console.log(Afnan.age);
+    console.log(Afnan.name);
+    
+
+
+</script>

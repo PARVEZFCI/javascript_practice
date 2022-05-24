@@ -1,0 +1,23 @@
+<script>
+
+    /*var arr = [1,2,3,4,5,6,7];
+    
+    function forSqr(item){
+       return item * item;
+    }
+  var newarr = arr.map(forSqr);
+    console.log(newarr[4]);*/
+    
+    var arr = [1,2,3,4,5,6,7];
+    /*var newarr = arr.map(function(item,index,fullarr){
+        console.log('Item is ' + item + " index is " + index + " full arr " + fullarr);
+    });*/
+    
+    var newarr = arr.filter (function(item){
+        return item % 2==0;
+    })
+    console.log(newarr);
+    
+    
+
+</script>

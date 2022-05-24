@@ -1,0 +1,23 @@
+<script>
+//for es------------5----------
+    var aFunc = function(){
+        console.log('A Demo Se5 ');
+    }
+    aFunc();
+ 
+    
+    //for es 6
+     var afun = () => console.log('A Demo for ES6');
+    afun();
+    //automatic return value 
+    const dob = [1996,1999,2012,2015];
+    
+    const currnetAge = dob.map(function(getVal){
+        return 2021 - getVal;
+    })
+    
+    console.log(currnetAge);
+    //for eS-6
+    const AgeES = dob.map((GetData,index)=>`${index} : ${2021-GetData} `);
+    console.log(AgeES);
+</script>

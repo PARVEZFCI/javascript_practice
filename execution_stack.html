@@ -1,0 +1,46 @@
+<script>
+var name = "parvez rohman";
+ function first(){
+     
+     second();
+     
+     
+     console.log("hi i am " + name);
+ }
+    function second(){
+        third();
+        console.log("hey i am "+name);
+        
+    }
+    function third(){
+        console.log("welcome " + name);
+    }
+    first();
+    
+   /* hoisiting*/
+   /* parvez("parvez rohman")
+    function parvez(name){
+        console.log("my name is "+name);
+    }
+    parvezcal(17,12)
+    function parvezcal(a,b){
+        console.log(a+b);
+    }
+    parvezcal(30,20);
+   
+    var a = function (name){
+        console.log("my name is parvez "+name);
+    }
+    
+ a("rohman");*/
+    
+    function anoglobalFunc(){
+        console.log("Global Function ");
+        function localFunct(){
+            console.log("local FUnctoin")
+        }
+        localFunct();
+    }
+    anoglobalFunc();
+    
+</script>

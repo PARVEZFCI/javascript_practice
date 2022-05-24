@@ -1,0 +1,36 @@
+<script>
+
+  /* var callBackFun={
+        name: "Parvez Rohman",
+           age:21,
+           job:"student",
+           anoutherobj:{
+               name:"afsana rohman",
+               value:function (){
+                   console.log("this name is "+this.name);
+               }
+           }
+   };
+    callBackFun.anoutherobj.value.call(callBackFun);
+    */
+    var karim = {
+        name:'karim Rahman',
+        db:1994,
+        age:function(currenyear,msg){
+            console.log(msg + this.name+' is '+(currenyear - this.db));
+        }
+    }
+    
+    var rahim = {
+        name:'Rahim Abdur',
+        db:1999
+    }
+/* karim.age.call(rahim,2021,"hellow bangladesh ! ");*/
+    /*karim.age.apply(rahim,[2021,"hello bangladesh ! "]);*/
+    
+var rahimcalculate = karim.age.bind(rahim);
+    rahimcalculate(2021,"this is Rahim ! ");
+    rahimcalculate(2027,"this is Rahim ! ");
+    rahimcalculate(2050,"this is Rahim ! ");
+    
+</script>

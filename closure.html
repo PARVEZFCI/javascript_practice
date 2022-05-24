@@ -1,0 +1,29 @@
+<script>
+
+    /*function closuresDemo(){
+        var x=10;
+        function anotherFunct(){
+            var y = 20;
+            console.log("sum " + (x+y));
+        }
+      return   anotherFunct();
+    }
+   var abc = closuresDemo();*/
+
+   /* function aParentFunct(x){
+        return function childfunct(y){
+            console.log(x+y);
+        }
+    }
+    aParentFunct(23)(12);*/
+    
+    (function aDemoFunction(){
+        console.log("this is demo function");
+    })();
+    
+    /*lamda*/
+    var a = (a,b) => a+b;
+    console.log(a(2,3))
+    
+    
+</script>
